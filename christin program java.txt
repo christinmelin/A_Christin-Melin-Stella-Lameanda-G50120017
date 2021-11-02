@@ -1,0 +1,49 @@
+package Kejarstat;
+
+import java.util.Scanner;
+
+public class christin {
+	public static void main (String args[]){
+			int angka;
+			System.out.println("input i");
+			System.out.println("input n");
+			System.out.println("input kelipatan");
+			String angka1;
+			Scanner scan1 = new Scanner(System.in);
+			System.out.print("i<=n?");
+			angka1 = scan1.nextLine();
+			if (!angka1.trim().equals("Yes")){
+				Scanner scan2 = new Scanner(System.in);
+				System.out.println("End");{
+					angka1 = scan2.nextLine();
+					if (!angka1.trim().equals("Yes")){
+						System.out.println("output&i");
+						System.out.println("i=i+kelipatan");
+					
+					}
+					else if (!angka1.trim().equals("No")){
+						System.out.println("End");
+			
+					}
+				}
+			}
+			else if (!angka1.trim().equals("No")){
+				System.out.println("i%5=0");
+				Scanner scan2 = new Scanner(System.in);
+				System.out.println("i%5=0?");{
+					angka1 = scan2.nextLine();
+					if (!angka1.trim().equals("Yes")){
+						System.out.println("i=i+kelipatan");
+						
+					}
+					else if (!angka1.trim().equals("No")){
+					
+					System.out.println("output&i");
+					System.out.println("i=i+kelipatan");
+					}
+				}
+			}
+		}
+	}
+
+
